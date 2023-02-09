@@ -1,22 +1,13 @@
 #include "monty.h"
 
 /**
- * _isdigit - checks if element is a digit
- * @tok_data: tokenized data
- * Return: 1
+ * _isdigit - test if a character is a number
+ *
+ * @prmChar: char
+ *
+ * Return: return 1 if true
  */
-
-int _isdigit(const char *tok_data)
+int _isdigit(char prmChar)
 {
-	if (!tok_data)
-		return (0);
-	if (*tok_data == '-')
-		tok_data++;
-	while (*tok_data != '\0')
-	{
-		if (!isdigit(*tok_data))
-			return (0);
-		tok_data++;
-	}
-	return (1);
+	return (prmChar >= '0' && prmChar <= '9');
 }

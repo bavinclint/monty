@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "data - monty model"
+git commit -m "bytecodes"
 git push
